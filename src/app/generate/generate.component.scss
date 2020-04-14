@@ -1,11 +1,20 @@
-html, body {
+html,
+body {
   height: 100%;
 }
+
 .full-height {
-	background-color:#c44032;
-	height:100%;
-	position:absolute;
+  background-color: #fbeaeb;
+  height: 100%;
+  position: absolute;
+  color: #2f3c7e;
+  font-family: cursive;
+
+  .borderToContainer {
+    border: 1px solid #2f3c7e;
+  }
 }
+
 .fittext {
   font-size: 18.8vw;
   line-height: 1;
@@ -14,10 +23,31 @@ html, body {
 
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+.fittext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 8vw;
 }
