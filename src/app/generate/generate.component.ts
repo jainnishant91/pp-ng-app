@@ -13,8 +13,8 @@ export class GenerateComponent implements OnInit {
 
   ngOnInit() {
     this.route.queryParamMap.subscribe(queryParams => {
-      // this.title = queryParams.get("word")
-      this.title = 'Coronvirushs';
+      this.title = queryParams.get("word")
+      //this.title = 'test text';
       const getFontSize = (textLength) => {
         console.log(textLength);
         const baseSize = 35;
